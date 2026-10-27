@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Workshop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text">
+                <h1>Formulir Pendaftaran Workshop</h1>
+            </div>
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <h2 class="judul-peserta"> Data Peserta </h2>
+            <table class="tabel-peserta" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td class="label-kolom">
+                        <label for="nama"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="text" id="nama" name="nama" size="30" placeholder="Masukkan nama lengkap Anda" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <label for="nim"><strong> NIM </strong></label>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="text" id="nim" name="nim" size="30" placeholder="Masukkan NIM Anda" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <strong>Jenis Kelamin</strong>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="radio" id="laki" name="jk" value="Laki-laki" />
+                        <label for="laki">Laki-laki</label>
+
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <label for="prodi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td class="input-kolom">
+                        <select id="prodi" name="prodi">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h2 class="judul-workshop"> Pilihan Workshop </h2>
+            <table class="tabel-workshop" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td class="label-kolom">
+                        <strong>Jenis Peserta</strong>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="radio" id="mahasiswa" name="jenis_peserta" value="Mahasiswa" />
+                        <label for="mahasiswa">Mahasiswa</label>
+
+                        <input type="radio" id="umum" name="jenis_peserta" value="Umum" />
+                        <label for="umum">Umum</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <strong>Materi Workshop</strong>
+                    </td>
+                    <td class="input-kolom">
+                        <div class="pilihan-materi">
+                            <div>
+                                <input type="checkbox" id="uiux" name="materi[]" value="UI/UX Design" />
+                                <label for="uiux">UI/UX Design</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="web" name="materi[]" value="Web Development" />
+                                <label for="web">Web Development</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data" name="materi[]" value="Data Analysis" />
+                                <label for="data">Data Analysis</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <h2 class="judul-informasi"> Informasi Tambahan </h2>
+            <table class="tabel-informasi" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td class="label-kolom">
+                        <label for="alasan"><strong>Alasan Mengikuti Workshop</strong></label>
+                    </td>
+                    <td class="input-kolom">
+                        <textarea id="alasan" name="alasan" rows="4" cols="30"
+                            placeholder="Tuliskan alasan Anda mengikuti workshop ini..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <strong>Jenis Pembayaran</strong>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="radio" id="qris" name="pembayaran" value="QRIS" />
+                        <label for="qris">QRIS</label>
+
+                        <input type="radio" id="transfer" name="pembayaran" value="Transfer Bank" />
+                        <label for="transfer">Transfer Bank</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-kolom">
+                        <label for="bukti"><strong>Bukti Pembayaran</strong></label>
+                    </td>
+                    <td class="input-kolom">
+                        <input type="file" id="bukti" name="bukti" />
+                    </td>
+                </tr>
+            </table>
+
+            <div class="tombol-container">
+                <input type="submit" name="daftar" value="&#10148;  Daftar" />
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

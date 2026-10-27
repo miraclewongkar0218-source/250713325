@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #f5f8fc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #d9e8fa;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(35, 92, 160, 0.08);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 30px;
+    margin-bottom: 22px;
+    color: #ffffff;
+    background: linear-gradient(120deg, #56a4f7, #2474ed);
+    border-radius: 12px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #eef6ff;
+}
+
+h2 {
+    padding: 10px 16px;
+    margin: 20px 0 10px;
+    border-radius: 9px;
+    font-size: 21px;
+}
+
+.judul-peserta {
+    color: #15518e;
+    background-color: #e4f3ff;
+}
+
+.judul-workshop {
+    color: #176648;
+    background-color: #e3f7ef;
+}
+
+.judul-informasi {
+    color: #4823a8;
+    background-color: #eeebff;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+td {
+    padding: 11px 15px;
+    border-bottom: 1px solid #dfebf8;
+    vertical-align: middle;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.label-kolom {
+    width: 28%;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.tabel-peserta .label-kolom {
+    background-color: #f1f7ff;
+    border-right: 2px solid #d6e7fa;
+}
+
+.tabel-workshop .label-kolom {
+    background-color: #f0faf6;
+    border-right: 2px solid #d4f0e4;
+}
+
+.tabel-informasi .label-kolom {
+    background-color: #f3f1ff;
+    border-right: 2px solid #e0dafb;
+}
+
+.tabel-peserta {
+    border: 1px solid #d3e7ff;
+}
+
+.tabel-workshop {
+    border: 1px solid #ccefe2;
+}
+
+.tabel-informasi {
+    border: 1px solid #dfd8ff;
+}
+
+.input-kolom {
+    background-color: #ffffff;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cbd8e8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #26364d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select {
+    max-width: 550px;
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3988f5;
+    box-shadow: 0 0 0 3px rgba(57, 136, 245, 0.12);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #8995a8;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    margin: 0 7px 0 0;
+    vertical-align: middle;
+    accent-color: #287df0;
+    cursor: pointer;
+}
+
+input[type="radio"]+label, input[type="checkbox"]+label {
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pilihan-materi div {
+    margin: 5px 0 10px;
+}
+
+.pilihan-materi div:last-child {
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.tombol-container {
+    text-align: center;
+    padding: 0 0 5px;
+}
+
+input[type="submit"] {
+    min-width: 180px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #3187f4, #2474e8);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(36, 116, 232, 0.18);
+    transition: background 0.2s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(120deg, #206ed6, #165cc4);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 18px 12px;
+        gap: 12px;
+    }
+
+    .header-icon {
+        width: 50px;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 21px;
+    }
+
+    .header-text p {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    td {
+        padding: 9px 7px;
+    }
+
+    .label-kolom {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    input[type="radio"]+label, input[type="checkbox"]+label {
+        margin-right: 8px;
+        font-size: 12px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+        font-size: 12px;
+    }
+}

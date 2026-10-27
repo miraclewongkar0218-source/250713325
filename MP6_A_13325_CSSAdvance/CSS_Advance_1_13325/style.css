@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff5f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4d2638;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #f0b6cd;
+}
+
+h1 {
+    margin: 0 0 25px;
+    padding: 18px;
+    text-align: center;
+    font-size: 30px;
+    color: #c2185b;
+    background-color: #fce4ec;
+    border: 1px solid #f0b6cd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e9a9c2;
+    background-color: #ffffff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #e9a9c2;
+    vertical-align: middle;
+}
+
+td.label {
+    width: 30%;
+    color: #a51d55;
+    background-color: #fce8ef;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px;
+    border: 1px solid #dda0b8;
+    background-color: #ffffff;
+    color: #4d2638;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+select {
+    max-width: 460px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c2185b;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #c2185b;
+    cursor: pointer;
+}
+
+.pilihan {
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.tombol {
+    text-align: center;
+    background-color: #fce4ec;
+}
+
+input[type="submit"] {
+    padding: 11px 45px;
+    border: 1px solid #c2185b;
+    background-color: #e75480;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c2185b;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 12px;
+    }
+
+    td {
+        padding: 7px;
+    }
+
+    td.label {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    input[type="radio"]+label, input[type="checkbox"]+label {
+        font-size: 12px;
+    }
+
+    input[type="file"] {
+        max-width: 100%;
+        font-size: 12px;
+    }
+}
